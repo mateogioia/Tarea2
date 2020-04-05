@@ -62,5 +62,13 @@ public class Usuario {
     public void setSaldo(int unSaldo) {
         this.saldo = unSaldo;
     }
+	
+    public boolean equals(Usuario u){
+        boolean retorno=false;
+        if(this.getCedula()==(u.getCedula())){
+            retorno=true;
+        }
+        return retorno;
+    }
     
 }
