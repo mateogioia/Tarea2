@@ -21,3 +21,8 @@ public class FuncionesUsuario {
         }
         return ret;
     }
+    
+    public void cobroSueldo(Usuario unUsuario,int cant){
+        unUsuario.setSaldo(unUsuario.getSaldo() + cant);
+    }
+}
